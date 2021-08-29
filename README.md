@@ -1,6 +1,6 @@
 # movie-ticket-website
 
-1. Open folder by vscode
+1. Open folder with vscode
 2. Run "npm install" in terminal
 3. Create "vp19" database in mongodb (if not yet) 
 4. Run "mongod" in one terminal, run "nodemon" in other one
