@@ -1,0 +1,148 @@
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+header nav ul li a {
+    text-transform: uppercase;
+}
+  
+  a.login-link:link{text-decoration: none;}
+  
+  header nav ul {
+    border-bottom: 1px solid #ffffff59;
+  }
+  
+  header nav ul li {
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  header nav ul li.active::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+    bottom: 0;
+  }
+  
+  header nav ul li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+    bottom: 0;
+    transition: all 0.5s;
+  }
+  
+  header nav ul li:hover::after {
+    width: 100%;
+  }
+  
+  /* Carousel */
+  
+  .carousel-inner .carousel-item {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .carousel-inner .item__1 {
+    background-image: url("./../images/hero-1.jpg");
+  }
+  
+  .carousel-inner .item__2 {
+    background-image: url("./../images/hero-2.jpg");
+  }
+  
+  .carousel-inner .item__3 {
+    background-image: url("./../images/hero-3.jpg");
+  }
+  
+  /* NEW IN */
+  .newIn__img {
+    position: relative;
+    border-radius: 10px;
+    /* che những phần tràn ra ngoài vùng div */
+    overflow: hidden;
+  }
+  
+  .overlay,
+  .newIn__play {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .overlay {
+    background: linear-gradient(to top, #ec7532, #fbbd61);
+    width: 200%;
+    height: 100%;
+    opacity: 0.5;
+    transform: skewX(30deg) translateX(-120%);
+    transition: all .5s;
+  }
+  
+  .newIn__img:hover .overlay {
+    transform: skewX(30deg) translateX(-20%);
+  }
+  
+  .newIn__play {
+    display: flex;
+    /* xóa việc các thành phần lên một hàng */
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* canh nội dung theo chiều dọc */
+    align-items: center;
+  
+    /* canh nội dung theo chiều ngang */
+    justify-content: center;
+    color: white;
+  
+    /* tạo hiệu ứng hover */
+    opacity: 0;
+    transition: all .5s;
+  }
+  
+  .newIn__img:hover .newIn__play {
+    opacity: 1;
+    transform: scale(.9);
+  }
+  
+  .newIn__play i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* COMING SOON */
+  #comingSoon {
+    color: white;
+    position: relative;
+    background-color: black;
+    padding: 70px 0;
+  }
+  
+  #comingSoon .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/slide-3.png');
+    background-size: cover;
+  }

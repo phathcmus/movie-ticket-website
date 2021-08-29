@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+html,body{
+    background-image: url(../images/hero-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Patua One', cursive;
+    }
+    
+    .container{
+    height: 100%;
+    align-content: center;
+    }
+    
+    .card{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(136, 125, 125, 0.5) !important;
+    }
+
+    #sign-up-card .card{
+        height: 550px;
+    }
+
+    #forgot-card .card{
+        height: 300px;
+    }
+
+    #newpass-card .card{
+        height: 340px;
+    }
+    
+    .social_icon span{
+    font-size: 60px;
+    margin-left: 10px;
+    color: #490b06;
+    }
+    
+    .social_icon span:hover{
+    color: white;
+    cursor: pointer;
+    }
+    
+    .card-header h3{
+    color: white;
+    }
+    
+    .social_icon{
+    position: absolute;
+    right: 20px;
+    top: -45px;
+    }
+    
+    .input-group-prepend span{
+    width: 50px;
+    background-color: #490b06;
+    color: black;
+    border:0 !important;
+    }
+    
+    input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+    
+    }
+    
+    .remember{
+    color: white;
+    }
+    
+    .remember input
+    {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+
+    .agree{
+    color: white;
+    }
+
+    .agree input{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+    
+    .login_btn{
+    color: white;
+    background-color: #490b06;
+    width: 100px;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    
+    .links{
+    color: white;
+    }
+    
+    .links a{
+    margin-left: 4px;
+    }
+
+    .pre_send{
+    margin-right: 20px;
+   
+    }
